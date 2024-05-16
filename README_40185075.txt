@@ -1,0 +1,11 @@
+The name and use of the classes in the project are listed below with a short description:
+
+1. “MyHashTableBinary”: This data structure stores the words from the input.txt file in alphabetic order. As the size of the HashTable is 26, each index is used for each alphabet. Each index is initialized as a binary search tree. The insertion in the binary search tree in O(logn).
+
+2. “BinarySearchTree”: This class is used to store nodes. Each node contains the word, the ASCII value of the word, and the reference of the left, right node. The insertion into the binary search tree depends on the ASCII value of the words. Inorder traversal of the tree helps to find the words in ascending order. During inorder traversal, every word has matched with the pattern. If matches, the matched word will be inserted into the string type array trimmedMatch. The inorder traversal is O(n).
+
+3. “PatternMatcherIterative”: During the inorder traversal, the words have matched in two different ways. One of the ways is the iterative way. While the pattern just has dots(.), after matching the length of the word and the pattern, the iterative way will be executed. It will take O(n) to do the matching.
+
+4. “DynamicProgrammingPatternMatcher”: The other way to pattern match is done by dynamic programming. This way will be followed when the pattern contains one or more starts (*). This will take O(m*n) time, where m is the length of the word and n is the length of the pattern.
+
+5. “regex_matcher_40185075”: This is the driver class or the main class where the input.txt file has read line by line. While reading the line, every string has been sent to the hash table to store them. After getting at most three matches the longest common subsequence has done in the complexity of O(m*n). And the final sequence is printed into an output.txt file.
